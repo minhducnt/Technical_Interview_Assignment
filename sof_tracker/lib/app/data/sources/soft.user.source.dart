@@ -23,10 +23,8 @@ class SofUserSource {
 
   Future<void> toggleFavorite(SofUserModel userData) async {
     if (isFavorite(userData.accountId ?? 0)) {
-      $log.i('Removing user from favorite');
       await _sofUserBox.delete(userData.accountId);
     } else {
-      $log.i('Adding user to favorite');
       await _sofUserBox.put(userData.accountId, userData);
     }
   }

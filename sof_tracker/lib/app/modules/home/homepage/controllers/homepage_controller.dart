@@ -4,9 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-
 import 'package:sof_tracker/app/data/di.dart';
-import 'package:sof_tracker/app/data/models/common/system.model.dart';
 import 'package:sof_tracker/app/global/constants/enums/systems.dart';
 import 'package:sof_tracker/app/global/utils/ui_utils.dart';
 import 'package:sof_tracker/app/global/utils/utils.dart';
@@ -91,4 +89,22 @@ class HomepageController extends BaseController with GetTickerProviderStateMixin
   Future<void> getInAppSystem() async {
     pageController = PageController(initialPage: currentTabIndex.value);
   }
+}
+
+class HomeTabInfo {
+  final dynamic icon;
+  final dynamic selectedIcon;
+  final double? iconSize;
+  final String title;
+  final Widget widget;
+  final bool hasBadge;
+
+  HomeTabInfo({
+    required this.icon,
+    required this.selectedIcon,
+    required this.title,
+    required this.widget,
+    this.iconSize,
+    this.hasBadge = false,
+  });
 }
