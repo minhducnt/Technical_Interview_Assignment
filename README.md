@@ -1,6 +1,6 @@
-# OIVAN_Assignment
+# Technical_Interview_Assignment
 
-## Technical assignment role for Mobile Developer (Flutter) position at Oivan Vietnam Company Limited
+## Technical assignment role for Mobile Developer (Flutter) position
 
 ## Submission
 
