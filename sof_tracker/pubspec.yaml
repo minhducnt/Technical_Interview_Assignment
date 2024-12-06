@@ -25,7 +25,7 @@ dependencies:
   dio: ^5.7.0
   dio_cache_interceptor: ^3.5.0
   dio_smart_retry: ^6.0.0
-  retrofit: ^4.4.0
+  retrofit: ^4.4.1
 
   # Localization
   intl: ^0.19.0
@@ -33,51 +33,51 @@ dependencies:
     sdk: flutter
 
   # Logger
-  talker: ^4.4.1
-  talker_flutter: ^4.4.1
-  talker_dio_logger: ^4.4.1
+  talker: ^4.5.2
+  talker_flutter: ^4.5.2
+  talker_dio_logger: ^4.5.2
 
   # Icons
-  fluentui_system_icons: ^1.1.255
+  fluentui_system_icons: ^1.1.265
   google_fonts: ^6.2.1
   cupertino_icons: ^1.0.8
 
   # Utils
-  envied: ^0.5.4+1
-  flex_color_scheme: ^7.3.1
-  flutter_launcher_icons: ^0.13.1
+  envied: ^1.0.0
+  flex_color_scheme: ^8.0.2
+  flutter_launcher_icons: ^0.14.2
   flutter_screenutil: ^5.9.3
-  internet_connection_checker_plus: ^2.5.1
+  internet_connection_checker_plus: ^2.5.2
   cached_network_image: ^3.4.1
-  infinite_scroll_pagination: ^4.0.0
-  flutter_animate: ^4.5.0
-  flutter_native_splash: ^2.4.1
-  flutter_svg: ^2.0.10+1
-  lottie: ^3.1.2
+  infinite_scroll_pagination: ^4.1.0
+  flutter_animate: ^4.5.2
+  flutter_native_splash: ^2.4.3
+  flutter_svg: ^2.0.16
+  lottie: ^3.1.3
   ndialog: ^4.3.1
   shimmer: ^3.0.0
   rxdart: ^0.28.0
-  jiffy: ^6.3.1
+  jiffy: ^6.3.2
 
   # UI
   animated_bottom_navigation_bar: ^1.3.3
   another_flutter_splash_screen: ^1.2.1
   gap: ^3.0.1
-  loading_animation_widget: ^1.2.1
+  loading_animation_widget: ^1.3.0
   badges: ^3.1.2
 
 dev_dependencies:
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 
-  build_runner: ^2.4.12
-  envied_generator: ^0.5.4+1
-  flutter_gen_runner: ^5.7.0
+  build_runner: ^2.4.13
+  envied_generator: ^1.0.0
+  flutter_gen_runner: ^5.8.0
   freezed: ^2.5.7
   hive_generator: ^2.0.1
-  json_serializable: ^6.8.0
-  retrofit_generator: ^9.1.0
+  json_serializable: ^6.9.0
+  retrofit_generator: ^9.1.5
 
 flutter:
   generate: true

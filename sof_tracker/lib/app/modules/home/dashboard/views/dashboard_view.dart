@@ -27,10 +27,9 @@ class DashboardView extends BaseSilverView<DashboardController> {
           alignment: Alignment.topCenter,
           children: [
             //* Background Curved
-            Container(
+            SizedBox(
               width: width,
               height: height / 5.5,
-              color: Theme.of(context).colorScheme.primary,
               child: LayoutBuilder(
                 builder: (context, constraints) {
                   return Stack(
@@ -42,7 +41,7 @@ class DashboardView extends BaseSilverView<DashboardController> {
                       ),
                       SvgAsset(
                         height: double.infinity,
-                        Assets.svgs.vectorCurved3.path,
+                        Assets.svgs.vectorCurved2.path,
                         fit: BoxFit.fitWidth,
                       ),
                     ],

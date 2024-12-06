@@ -43,7 +43,7 @@ class BookmarkView extends BaseSilverView<BookmarkController> {
                       ),
                       SvgAsset(
                         height: double.infinity,
-                        Assets.svgs.vectorCurved3.path,
+                        Assets.svgs.vectorCurved2.path,
                         fit: BoxFit.fitWidth,
                       ),
                     ],

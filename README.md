@@ -18,11 +18,7 @@ To set up the project, run the following command to activate the project:
 
 ```bash
 git clone https://github.com/minhducnt/OIVAN_Assignment.git
-flutter clean
-flutter pub get
-dart run flutter_native_splash:create
-dart run build_runner clean
-dart run build_runner build --delete-conflicting-outputs
+./run_gen_files.sh
 ```
 
 Once the project is activated, run the following command to run the app:
@@ -37,12 +33,12 @@ Or you can run by use F5 in Visual Studio Code.
 
 - **User List**: Users can view a list of StackOverflow users.
 - **Bookmark/de-bookmark** Users can bookmark their favorite users.
-- **State Management**: GetX is used for efficient state management throughout the application.
+- **State Management**: GetX is used for efficient and fast state management throughout the application.
 - **Local Database**: Hive is used for storing bookmarked users.
-- **Internationalization**: Intl is used for internationalization in the application.
+- **Internationalization**: Intl, Flutter Localization is used for internationalization in the application.
 - **Network**: Retrofit is used for network calls in the application.
 
-## Technologies Used
+## Tech Stack
 
 - Flutter
 - GetX (State Management)

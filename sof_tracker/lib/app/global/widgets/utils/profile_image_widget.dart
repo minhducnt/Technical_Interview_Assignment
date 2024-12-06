@@ -24,6 +24,16 @@ class ProfileImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final onPrimaryColor = Theme.of(context).colorScheme.onPrimary.withOpacity(0.8);
+
+    final defaultImage = Image.asset(
+      Assets.images.profilePic.path,
+      height: height,
+      width: width,
+      fit: BoxFit.contain,
+      color: backgroundColor ?? onPrimaryColor,
+    );
+
     return ClipOval(
       child: CircleAvatar(
         maxRadius: 35,
@@ -44,28 +54,14 @@ class ProfileImageWidget extends StatelessWidget {
                     ),
                   );
                 },
-                placeholder: (context, url) => Image.asset(
-                  Assets.images.profilePic.path,
-                  height: height,
-                  width: width,
-                  fit: BoxFit.contain,
-                  color: backgroundColor ?? Theme.of(context).colorScheme.onPrimary.withOpacity(0.8),
-                ),
-                errorWidget: (context, url, error) => Image.asset(
-                  Assets.images.profilePic.path,
-                  height: height,
-                  width: width,
-                  fit: BoxFit.contain,
-                  color: backgroundColor ?? Theme.of(context).colorScheme.onPrimary.withOpacity(0.8),
-                ),
+                placeholder: (context, url) {
+                  return defaultImage;
+                },
+                errorWidget: (context, url, error) {
+                  return defaultImage;
+                },
               )
-            : Image.asset(
-                Assets.images.profilePic.path,
-                height: height,
-                width: width,
-                fit: BoxFit.contain,
-                color: backgroundColor ?? Theme.of(context).colorScheme.onPrimary.withOpacity(0.8),
-              ),
+            : defaultImage,
       ),
     );
   }

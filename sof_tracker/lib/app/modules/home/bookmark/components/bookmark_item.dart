@@ -5,12 +5,11 @@ import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-
 import 'package:sof_tracker/app/data/di.dart';
 import 'package:sof_tracker/app/data/models/responses/user/sof.user.model.dart';
 import 'package:sof_tracker/app/global/constants/enums/sof_user_types.dart';
 import 'package:sof_tracker/app/global/constants/resources/assets.gen.dart';
-import 'package:sof_tracker/app/global/extension/string_extension.dart';
+import 'package:sof_tracker/app/global/extensions/string_extension.dart';
 import 'package:sof_tracker/app/global/styles/app_text_styles.dart';
 import 'package:sof_tracker/app/global/utils/helpers/misc.dart';
 import 'package:sof_tracker/app/global/widgets/utils/image_asset.dart';

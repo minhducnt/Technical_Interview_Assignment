@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import 'package:sof_tracker/app/data/di.dart';
 import 'package:sof_tracker/app/data/models/responses/user/sof.user.model.dart';
-
 import 'package:sof_tracker/app/data/repos/sof.user.repo.dart';
 import 'package:sof_tracker/app/global/constants/enums/systems.dart';
 import 'package:sof_tracker/app/global/utils/helpers/misc.dart';
@@ -39,7 +38,7 @@ class DashboardController extends BaseController {
   }
 
   //* Functions
-  Future<void> _fetchData(int pageKey, {int pageSize = 30}) async {
+  Future<void> _fetchData(int pageKey, {int pageSize = 20}) async {
     try {
       final res = await sofUserService.getSofUsers(queries: {
         'page': pageKey,
@@ -79,7 +78,7 @@ class DashboardController extends BaseController {
       GetBuilder(
         init: ReputationController(),
         builder: (controller) => SizedBox(
-          height: height * 0.8,
+          height: height * 0.85,
           child: const ReputationView(),
         ),
       ),

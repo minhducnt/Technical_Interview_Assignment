@@ -1,4 +1,5 @@
 import 'package:intl/intl.dart';
+import 'package:jiffy/jiffy.dart';
 
 extension DateTimeExtension on String {
   String get formattedDate {
@@ -26,5 +27,14 @@ extension DateTimeExtension on String {
     DateTime dateTime = DateTime.parse(this).toLocal();
     String formattedDate = DateFormat('yyyy').format(dateTime);
     return formattedDate;
+  }
+
+  String get utcDateTime {
+    if (isEmpty) {
+      return '';
+    }
+    final date = DateTime.parse(this).toLocal();
+    final utcDate = date.toUtc().toString();
+    return Jiffy.parse(utcDate).yMMMMd;
   }
 }

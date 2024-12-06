@@ -6,7 +6,7 @@ import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 
 import 'package:sof_tracker/app/data/di.dart';
 import 'package:sof_tracker/app/data/models/responses/user/sof.user.model.dart';
-import 'package:sof_tracker/app/global/extension/iterable_extensions.dart';
+import 'package:sof_tracker/app/global/extensions/iterable_extension.dart';
 import 'package:sof_tracker/app/global/utils/ui_utils.dart';
 import 'package:sof_tracker/app/global/widgets/base/base_controller.dart';
 import 'package:sof_tracker/app/modules/home/reputation/controllers/reputation_controller.dart';

@@ -47,7 +47,6 @@ class AppTheme extends GetXState {
         fabAlwaysCircular: true,
         fabUseShape: true,
         useInputDecoratorThemeInDialogs: true,
-        useTextTheme: true,
       ),
       useMaterial3ErrorColors: true,
       visualDensity: FlexColorScheme.comfortablePlatformDensity,
