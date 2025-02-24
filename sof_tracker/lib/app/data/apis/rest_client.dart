@@ -20,7 +20,7 @@ class RestClient {
 
   void initDioClient() {
     final timeOutDuration = $r.times.timeOut;
-    final baseUrl = $r.env.coreUrl;
+    final baseUrl = "https://api.stackexchange.com/2.2/";
 
     //* Dio
     _dio = Dio();

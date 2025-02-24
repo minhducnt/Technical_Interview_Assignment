@@ -10,10 +10,6 @@
 			"type": "dart",
 			"program": "sof_tracker/lib/main.dart",
 			"args": [
-				"--flavor",
-				"develop",
-				"--dart-define-from-file",
-				"configs/.env.dev"
 			]
 		},
 		{
@@ -23,10 +19,6 @@
 			"flutterMode": "profile",
 			"program": "sof_tracker/lib/main.dart",
 			"args": [
-				"--flavor",
-				"staging",
-				"--dart-define-from-file",
-				"configs/.env.stg"
 			]
 		},
 		{
@@ -36,10 +28,6 @@
 			"flutterMode": "release",
 			"program": "sof_tracker/lib/main.dart",
 			"args": [
-				"--flavor",
-				"production",
-				"--dart-define-from-file",
-				"configs/.env.prod"
 			]
 		}
 	]
