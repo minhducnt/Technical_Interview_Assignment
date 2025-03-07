@@ -1,0 +1,1 @@
+-keep class com.oivan.sof_tracker.BuildConfig { *; }

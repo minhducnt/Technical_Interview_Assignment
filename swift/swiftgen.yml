@@ -1,0 +1,28 @@
+input_dir: SofTracker/Shared/Resources/
+output_dir: SofTracker/Shared/Generated/
+
+strings:
+    inputs:
+        - en.lproj
+    outputs:
+        - templateName: structured-swift5
+          params:
+           publicAccess: true
+          output: Strings+Generated.swift
+
+xcassets:
+    inputs:
+        - Assets.xcassets
+    outputs:
+        - templateName: swift5
+          params:
+            forceProvidesNamespaces: true
+            forceFileNameEnum: true
+          output: XCAssets+Generated.swift
+
+fonts:
+    inputs:
+        - Fonts
+    outputs:
+        templateName: swift5
+        output: Fonts+Generated.swift

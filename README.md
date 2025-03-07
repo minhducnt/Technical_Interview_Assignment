@@ -1,23 +1,23 @@
-# Technical_Interview_Assignment
+# TechChallenge
 
-## Technical assignment role for Mobile Developer (Flutter) position
+## Mobile Developer Code Challenge
 
-## Submission
+### Submission
 
 Please read the README.md to run the project.
 
 An application allow user to view list of StackOverflow (SOF) user, their reputation history and bookmark their favorite user.
 
-## Getting Started
+### Getting Started
 
 To run the app, clone the repository and follow the setup instructions. Once setup is complete, run the app.
 
-## Initial Setup
+### Initial Setup
 
 To set up the project, run the following command to activate the project:
 
 ```bash
-git clone https://github.com/minhducnt/Technical_Interview_Assignment.git
+git clone https://github.com/minhducnt/TechChallenge.git
 ./run_gen_files.sh (Terminal)
 ```
 
@@ -29,7 +29,7 @@ flutter run
 
 Or you can run by use F5 in Visual Studio Code.
 
-## Features
+### Features
 
 - **User List**: Users can view a list of StackOverflow users.
 - **Bookmark/de-bookmark** Users can bookmark their favorite users.
@@ -38,7 +38,7 @@ Or you can run by use F5 in Visual Studio Code.
 - **Internationalization**: Intl, Flutter Localization is used for internationalization in the application.
 - **Network**: Retrofit is used for network calls in the application.
 
-## Tech Stack
+### Tech Stack
 
 - Flutter
 - GetX (State Management)
@@ -52,16 +52,11 @@ Or you can run by use F5 in Visual Studio Code.
 - Flutter Launcher Icons (App Icon)
 - and other Flutter packages
 
-## Screenshots
+### Screenshots
 
-- Splash
-  ![Splash Screen](screenshots/splash_screen.jpg)
-
-- Home
-  ![Home Screen](screenshots/dashboard_screen.jpg)
-
-- Bookmark
-  ![Bookmark](screenshots/bookmark_screen.jpg)
-
-- Reputation History
-  ![Reputation History](screenshots/reputation_screen.jpg)
+| Screen | Preview |
+|--------|---------|
+| **Splash** | ![Splash](screenshots/splash_screen.jpg){width=250} |
+| **Home** | ![Home](screenshots/dashboard_screen.jpg){width=250} |
+| **Bookmark** | ![Bookmark](screenshots/bookmark_screen.jpg{width=250}) |
+| **Reputation History** | ![Reputation](screenshots/reputation_screen.jpg){width=250} |
